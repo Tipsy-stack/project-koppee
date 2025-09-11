@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #33211d;
+  --color-secondary: #da9f5b;
+  --color-third: #d99e5b;
+  --color-overlay: rgba(51, 33, 29, 0.7);
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --color-over: #33211de5;
+  --color-lay: #36221f;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#banner {
+  background: linear-gradient(rgba(51, 33, 29, 0.7), rgba(51, 33, 29, 0.7)),
+    url("./images/carousel-1.jpg") no-repeat center / cover;
+}
+
+#Content3 {
+  background: linear-gradient(rgba(51, 33, 29, 0.7), rgba(51, 33, 29, 0.7)),
+    url("./images/bg.jpg") no-repeat center / cover;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: #da9f5b; 
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  margin: 0 4px;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: #33211d;
+  width: 40px;
+  border-radius: 14px;
+  transition: all 0.5s ease;
+}
+
+.mySwiper .swiper-pagination {
+  bottom: 20px;
+  text-align: center;
+}

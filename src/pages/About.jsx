@@ -4,10 +4,10 @@ import OtherBanner from "../components/OtherBanner";
 
 const About = () => {
   return (
-    <>
+    <div className="bg-[#fffbf2]">
       <OtherBanner title="About Us" />
       <Content1 />
-    </>
+    </div>
   );
 };
 export default About;

@@ -14,7 +14,7 @@ const Header = () => {
           </h1>
         </Link>
         <ul
-          className={`flex lg:flex-row flex-col fixed lg:static top-0 z-50 left-0 w-1/2 bg-primary h-[100vh] lg:h-fit transform transition-all duration-300 lg:bg-transparent lg:translate-x-0 ${
+          className={`flex md:flex-row flex-col fixed md:static top-0 z-50 left-0 w-1/2 md:w-auto bg-primary h-[100vh] md:h-fit transform transition-all duration-300 md:bg-transparent md:translate-x-0 ${
             showNav ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -34,7 +34,7 @@ const Header = () => {
           ))}
         </ul>
         <button
-          className="lg:hidden h-[60px] w-[60px] outline-none border-1 border-gray-100 text-gray-400 hover:text-gray-600 flex justify-center items-center text-3xl font-semibold cursor-pointer"
+          className="md:hidden h-[60px] w-[60px] outline-none border-1 border-gray-100 text-gray-400 hover:text-gray-600 flex justify-center items-center text-3xl font-semibold cursor-pointer"
           onClick={() => setShowNav(!showNav)}
         >
           <RiMenu4Fill />

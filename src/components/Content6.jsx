@@ -12,7 +12,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 function Content6() {
   return (
     <section className="mt-8">
-      <div className="flex flex-col justify-center items-center py-8 px-5 z-20 gap-4">
+      <div className="flex flex-col justify-center items-center py-8 px-8 md:px-15 lg:px-15 z-20 gap-4">
         <div className="w-0.5 h-20 lg:h-30 border border-secondary border-center"></div>
 
         <div>
@@ -59,11 +59,11 @@ function Content6() {
           {testimonial.map((item) => (
             <SwiperSlide key={item.id}>
               <div className="flex flex-col items-center h-75">
-                <div className="flex flex-row items-center gap-4 w-full mt-10 px-6 md:px-10 lg:px-16">
+                <div className="flex flex-row items-center gap-4 w-full mt-10 md:px-13 lg:px-5">
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-full object-cover"
+                    className="w-20 h-20 md:w-24 md:h-24 mb-4 rounded-none md:rounded-none object-cover"
                   />
                   <div className="flex flex-col gap-2">
                     <h3 className="text-[18px] md:text-[20.4px] font-semibold text-primary">
@@ -74,7 +74,7 @@ function Content6() {
                     </p>
                   </div>
                 </div>
-                <p className=" text-gray-600 font-montserrat px-6 md:px-10 lg:px-16 mb-5 lg:text-lg text-[14px]">
+                <p className=" text-gray-600 font-montserrat md:px-13 lg:px-5 mb-5 lg:text-lg text-[14px]">
                   {item.feedback}
                 </p>
               </div>

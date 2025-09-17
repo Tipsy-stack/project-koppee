@@ -20,7 +20,7 @@ const footer = () => {
           <img src={overlayTopImg} alt="Overlay" className="w-full" />
         </div>
 
-        <div className=" lg:h-full relative w-full lg:w-full object-fit ">
+        <div className=" lg:h-full relative w-full lg:w-full object-cover ">
           <img
             src={background}
             alt=""
@@ -28,7 +28,7 @@ const footer = () => {
           />
 
           <div className="bg-over lg:h-full lg:w-full h-full w-full object-fit lg:left-0 top-0 absolute z-20"></div>
-          <div className="relative flex lg:flex-row flex-col lg:px-15 px-4 pb-10 pt-[150px] gap-12 mt-20 text-white z-20">
+          <div className="relative w-full flex lg:flex-row md:flex-row md:px-10 flex-col lg:px-15 md:gap-8 px-8 pb-10 pt-[150px] gap-12 mt-20 text-white z-20">
             <div className="w-full">
               <h2 className="lg:text-2xl text-lg font-semibold tracking-widest mb-5">
                 GET IN TOUCH
@@ -57,7 +57,7 @@ const footer = () => {
                 Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum
               </p>
 
-              <div className="flex gap-5 mt-5">
+              <div className="flex lg:gap-5 gap-2 md:gap-2 mt-5">
                 <div>
                   <FaTwitter className="border-1 hover:bg-white hover:text-black h-[40px] w-[40px] outline-none text-4xl flex items-center justify-center p-2  " />
                 </div>
@@ -80,10 +80,10 @@ const footer = () => {
               <h2 className="text-2xl font-semibold tracking-widest mb-5">
                 OPEN HOURS
               </h2>
-              <p className="mb-[6px] font-semibold">MONDAY - FRIDAY</p>
-              <p className="mb-[6px] font-semibold">8.00 AM - 8.00 PM</p>
-              <p className="mb-[6px] font-semibold">SATURDAY - SUNDAY</p>
-              <p className="mb-[6px] font-semibold">2.00 PM - 8.00 PM</p>
+              <p className="md:mb-[6px] lg:mb-[6px] mb-4 font-montserrat md:font-semibold lg:font-semibold">MONDAY - FRIDAY</p>
+              <p className="md:mb-[6px] lg:mb-[6px] mb-4 font-montserrat md:font-semibold lg:font-semibold">8.00 AM - 8.00 PM</p>
+              <p className="md:mb-[6px] lg:mb-[6px] mb-4 font-montserrat md:font-semibold lg:font-semibold">SATURDAY - SUNDAY</p>
+              <p className="md:mb-[6px] lg:mb-[6px] mb-4 font-montserrat md:font-semibold lg:font-semibold">2.00 PM - 8.00 PM</p>
             </div>
 
             <div className="w-full">
@@ -99,10 +99,10 @@ const footer = () => {
                   type="email"
                   id="email"
                   placeholder="Your Email"
-                  className="lg:px-1.5 lg:py-5 px-7 py-4 z-20 text-black  placeholder:font-montserrat bg-white  focus:outline-secondary"
+                  className="lg:px-2 lg:flex-2 lg:w-[70%] lg:py-5 md:px-[4px] md:w-[40%] md:flex-1 md:py-4 px-5 z-20 text-black  placeholder:font-montserrat bg-white  focus:outline-secondary"
                 />
 
-                <button className=" bg-secondary block lg:px-1.5 lg:py-5 px-5 py-4 text-[#212529]  font-montserrat cursor-pointer hover:bg-[#ed9837] font-semibold ">
+                <button className=" bg-secondary block lg:px-2 lg:py-5 md:py-4 md:flex-1 md:px-2 px-3.5 py-4 text-[#212529]  font-montserrat cursor-pointer hover:bg-[#ed9837] font-semibold ">
                   Sign Up
                 </button>
               </div>

@@ -5,7 +5,8 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
-// import Pages from "./pages/Pages";
+import Reservation from "./pages/Reservation";
+import Testimonial from "./pages/Testimonial";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="service" element={<Service />} />
           <Route path="menu" element={<Menu />} />
-          {/* <Route path="page" element={<Pages />} /> */}
+          <Route path="reservation" element={<Reservation />} />
+          <Route path="testimonial" element={<Testimonial />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

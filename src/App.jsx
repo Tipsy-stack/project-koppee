@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -7,8 +8,32 @@ import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import Reservation from "./pages/Reservation";
 import Testimonial from "./pages/Testimonial";
+import Loader from "./components/Loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Wait until all assets are loaded
+    const handlePageLoad = () => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 1500); // match your jQuery fade time
+    };
+
+    if (document.readyState === "complete") {
+      handlePageLoad();
+    } else {
+      window.addEventListener("load", handlePageLoad);
+    }
+
+    return () => window.removeEventListener("load", handlePageLoad);
+  }, []);
+
+  if (loading) {
+    return <Loader />; // 👈 Show loader until page is ready
+  }
+
   return (
     <BrowserRouter>
       <Routes>
@@ -25,4 +50,5 @@ function App() {
     </BrowserRouter>
   );
 }
+
 export default App;
